@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(168, 168, 168);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+header p {
+  color: rgb(25, 72, 126);
+}
+
+#batatinha {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 20px;
+}
+section div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background-color: rgb(25, 72, 126);
+  padding: 2rem;
+}
+section div div {
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+}
+
+main {
+  background-color: rgb(229, 230, 231);
+}
+
+#busca {
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  color: rgb(17, 16, 16);
+  font-size: medium;
+  border: 1px solid;
+  padding: 12px;
+  text-align: left;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+section button {
+  gap: 20px;
+}
+
+#busca + button {
+  margin-left: 30px;
+}

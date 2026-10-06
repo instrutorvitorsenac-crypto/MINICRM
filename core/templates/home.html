@@ -1,29 +1,39 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
 </head>
 <body>
-    <header><p>LOGO</p> <p>Rodrigo</p></header>
+    <header><p>LOGO</p>         <p>Rodrigo</p></header>
     <main>
-        <section>
+        <section id="batatinha">
             <div>
+                <div>
                 <p>TOTAL DE CLIENTES</p>
                 <p>4</p>
+                </div>
             </div>
             <div>
+                <div>
                 <p>EM NEGOCIAÇÃO</p>
                 <p>{{total_negociacao}}</p>
+                </div>
             </div>
             <div>
+                <div>
                 <p>FECHADOS</p>
-                <p>10</p>
+                <p>{{total_fechado}}</p>
+                </div>
             </div>
             <div>
+                <div>
                 <p>VALOR TOTAL NEGOCIADO</p>
-                <p>R$ 400.000,00</p>
+                <p>{{total_proposta}}</p>
+                </div>
             </div>
         </section>
         <section>
